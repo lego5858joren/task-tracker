@@ -23,3 +23,17 @@ A full-stack Task Tracker app built using:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/task-tracker.git
+
+
+```mermaid
+flowchart TD
+    A[User] --> B[React Frontend]
+    B --> C[Spring Boot API Endpoints]
+    C --> D[H2 Database]
+    B --> E[Task List]
+    B --> F[Task Form]
+    E --> G[GET /api/tasks]
+    F --> H[POST /api/tasks]
+    C --> I[PUT /api/tasks/id]
+    C --> J[DELETE /api/tasks/id]
+
